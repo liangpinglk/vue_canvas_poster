@@ -138,14 +138,15 @@ export default {
             top: 829,
             left: 385
           },
-          // 本地图片
+          // 本地图片,透明度50%
           {
             type: 'image',
             url: require('./assets/slogen.png'),
             left: 26,
             top: 821,
             width: 218,
-            height: 24
+            height: 24,
+            opacity: 0.5
           },
           {
             type: 'qrcode',
