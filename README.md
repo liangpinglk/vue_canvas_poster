@@ -188,14 +188,15 @@ Vue.use(CanvasPoster)
             top: 829,
             left: 385
           },
-          // 本地图片
+          // 本地图片,透明度50%
           {
             type: 'image',
             url: require('./assets/slogen.png'),
             left: 26,
             top: 821,
             width: 218,
-            height: 24
+            height: 24,
+            opacity: 0.5
           },
           {
             type: 'qrcode',
@@ -263,6 +264,7 @@ Vue.use(CanvasPoster)
 | height | Number | 0      | 高度                                      |
 | radius | Number | 0      | 圆角                                      |
 | deg    | Number | 0      | 旋转角度 (目前不能跟 radius 一起用)       |
+| opacity| Number | 1      | 图片透明度（0～1），如:0.5 |
 
 ### qrcode (二维码) 字段
 
