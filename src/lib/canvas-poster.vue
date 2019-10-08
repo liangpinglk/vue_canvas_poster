@@ -141,7 +141,8 @@ export default {
     },
     drawImage(params) {
       this.ctx.save()
-      const { img, top = 0, left = 0, width = 0, height = 0, radius = 0, deg = 0 } = params
+      const { img, top = 0, left = 0, width = 0, height = 0, radius = 0, deg = 0, opacity=1 } = params
+      this.ctx.globalAlpha = opacity      
       if (radius) {
         this._doClip(left, top, width, height, radius)
         this.ctx.clip()
