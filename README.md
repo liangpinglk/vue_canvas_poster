@@ -34,6 +34,11 @@ vue 组件-简单属性画 Canvas 图
 
 npm install github:nciefeiniu/vue_canvas_poster#master --save
 
+# 建议
+在package.json中设置
+
+"vue-canvas-posters": "github:nciefeiniu/vue_canvas_poster#master"
+
 ```
 
 ## 使用组件
