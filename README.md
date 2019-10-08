@@ -32,7 +32,7 @@ vue 组件-简单属性画 Canvas 图
 
 # npm
 
-npm i vue-canvas-poster --save
+npm install github:nciefeiniu/vue_canvas_poster#master --save
 
 ```
 
@@ -46,7 +46,7 @@ template
 
 ```javascript
 // 页面
-import { vueCanvasPoster } from 'vue-canvas-poster'
+import { vueCanvasPoster } from 'vue-canvas-posters'
 
 components: {
   vueCanvasPoster
@@ -54,11 +54,9 @@ components: {
 
 // 全局注册
 import Vue from 'vue'
-import CanvasPoster from 'vue-canvas-poster'
+import CanvasPoster from 'vue-canvas-posters'
 Vue.use(CanvasPoster)
 
-// 直接引入
- script src='../src/lib/index.js'
 ```
 
 <details><summary>painting（点击展开）</summary><br>
