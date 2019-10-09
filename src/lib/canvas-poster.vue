@@ -167,7 +167,7 @@ export default {
     // 写字
     drawText(params) {
       this.ctx.save()
-      const {
+      let {
         MaxLineNumber = 2,
         breakWord = false,
         color = 'black',
@@ -179,7 +179,8 @@ export default {
         textAlign = 'left',
         width,
         bolder = false,
-        textDecoration = 'none'
+        textDecoration = 'none',
+        isEnglish = false
       } = params
 
       this.ctx.beginPath()
@@ -198,6 +199,15 @@ export default {
         let fillText = ''
         let fillTop = textTop
         let lineNum = 1
+        if (isEnglish) {
+          let _tempContent = []
+          content = content.split(' ')
+          for (let i = 0; i < content.length; i++) {
+            _tempContent.push(content[i])
+            _tempContent.push(" ")
+          }
+          content = _tempContent
+        }
         for (let i = 0; i < content.length; i++) {
           fillText += [content[i]]
           if (this.ctx.measureText(fillText).width > width) {
