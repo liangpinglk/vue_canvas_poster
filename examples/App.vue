@@ -81,18 +81,18 @@ export default {
             width: 160,
             height: 160
           },
-          {
-            type: 'text',
-            content: `18987、安奈儿童装上衣条纹童装上衣条纹童装上衣 条纹童装上衣`,
-            color: '#666666',
-            fontSize: 22,
-            top: 507,
-            left: 25,
-            width: 450,
-            lineHeight: 33,
-            MaxLineNumber: 2,
-            breakWord: true
-          },
+          // {
+          //   type: 'text',
+          //   content: `18987、安奈儿童装上衣条纹童装上衣条纹童装上衣 条纹童装上衣`,
+          //   color: '#666666',
+          //   fontSize: 22,
+          //   top: 507,
+          //   left: 25,
+          //   width: 450,
+          //   lineHeight: 33,
+          //   MaxLineNumber: 2,
+          //   breakWord: true
+          // },
 
           {
             type: 'text',
@@ -158,6 +158,19 @@ export default {
             width: 130,
             height: 130
           },
+          {
+            type: 'text',
+            content: '3SBIO INC.(01530) got a total score of 79.37 in "Green Development Pioneer Top100 – An ESG reporting assessment of China’s Listed Companies" in 2019, ranking first in the health care industry, and ranked S1 (top 5%) in all 520 high-market-value enterprises of A-share and Hong Kong-share.',
+            color: '#666666',
+            fontSize: 22,
+            top: 507,
+            left: 25,
+            width: 450,
+            lineHeight: 33,
+            MaxLineNumber: 99,
+            breakWord: true,
+            isEnglish: true
+          }
         ]
       }
     }
@@ -167,8 +180,8 @@ export default {
     success(src) {
       this.src = src
     },
-    fail(err) {
-      console.log('fail', err)
+    fail() {
+      // console.log('fail', err)
     }
   }
 }
