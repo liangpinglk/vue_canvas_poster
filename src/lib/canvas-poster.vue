@@ -208,9 +208,17 @@ export default {
           }
           content = _tempContent
         }
+
+        // 临时变量，保存超过长度的最后一个字符
+        let _tempWord = ""
+
         for (let i = 0; i < content.length; i++) {
-          fillText += [content[i]]
-          if (this.ctx.measureText(fillText).width > width) {
+          if (!fillText) {
+            fillText += [_tempWord]
+          }
+          // fillText += [_tempWord]
+          if (this.ctx.measureText(fillText + [content[i]]).width > width) {
+            _tempWord = content[i]
             if (lineNum === MaxLineNumber) {
               if (i !== content.length) {
                 fillText = fillText.substring(0, fillText.length - 1) + '...'
@@ -225,6 +233,8 @@ export default {
             fillText = ''
             fillTop += lineHeight
             lineNum++
+          } else {
+            fillText += [content[i]]
           }
         }
         this.ctx.fillText(fillText, left, fillTop)
