@@ -210,6 +210,20 @@ Vue.use(CanvasPoster)
             width: 130,
             height: 130
           },
+          // 纯英文字符串自动换行
+          {
+            type: 'text',
+            content: '3SBIO INC.(01530) got a total score of 79.37 in "Green Development Pioneer Top100 – An ESG reporting assessment of China’s Listed Companies" in 2019, ranking first in the health care industry, and ranked S1 (top 5%) in all 520 high-market-value enterprises of A-share and Hong Kong-share.',
+            color: '#666666',
+            fontSize: 22,
+            top: 507,
+            left: 25,
+            width: 450,
+            lineHeight: 33,
+            MaxLineNumber: 99,
+            breakWord: true,
+            isEnglish: true
+          }
         ]
       }
 ```
@@ -254,6 +268,7 @@ Vue.use(CanvasPoster)
 | width          | Number  |        | 文本宽度                                                                         |
 | bolder         | String  | false  | 加粗                                                                             |
 | textDecoration | String  | none   | underline(下划线)、line-through(贯穿线)                                          |
+| isEnglish | Boolean | false | 纯英文字符串，默认不是 |
 
 ### image (图片) 字段
 
