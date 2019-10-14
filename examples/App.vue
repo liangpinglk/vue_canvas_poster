@@ -160,7 +160,7 @@ export default {
           },
           {
             type: 'text',
-            content: '3SBIO INC.(01530) got a total score of 79.37 in "Green Development Pioneer Top100 – An ESG reporting assessment of China’s Listed Companies" in 2019, ranking first in the health care industry, and ranked S1 (top 5%) in all 520 high-market-value enterprises of A-share and Hong Kong-share.',
+            content: '<blod> 3SBIO INC.(01530) </blod> got a total score of 79.37 in "Green Development Pioneer Top100 – An ESG reporting assessment of China’s Listed Companies" in 2019, ranking first in the health care industry, and ranked S1 (top 5%) in all 520 high-market-value enterprises of A-share and Hong Kong-share.',
             color: '#666666',
             fontSize: 22,
             top: 507,
