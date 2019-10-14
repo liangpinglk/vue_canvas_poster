@@ -254,11 +254,24 @@ Vue.use(CanvasPoster)
 
 ### text (文本) 字段
 
+`2019-10-14` 新增字符串通过<blod></blod>标签标记需要加粗的文字。
+比如：
+```
+content: "你好吗？我很<blod好</blod>"
+
+```
+
+⚠️⚠️⚠️但是，如果是纯英文的字符串，标记加粗文字需要和单词之间空一个空格
+如：
+```
+content: "You create a file and put <blod> special </blod> character sequences called HTML elements into your file. These elements identify the structural parts of your document. When a Web browser displays the file, it will display your file's content, but not the characters that make up the structure"
+
+```
 | 字段名         | 类型    | 默认值 | 描述                                                                             |
 | -------------- | ------- | ------ | -------------------------------------------------------------------------------- |
 | top            | Number  | 0      | 距离顶部的距离                                                                   |
 | left           | Number  | 0      | 距离左侧的距离                                                                   |
-| content        | String  | ''     | 文本内容                                                                         |
+| content        | String  | ''     | 文本内容  ⚠️：文本类容可以用<blod></blod>进行标记需要加粗的文本                                                                       |
 | fontSize       | Number  | 0      | 文字大小                                                                         |
 | color          | String  | black  | 颜色                                                                             |
 | textAlign      | String  | 'left' | 字体居中需要设置 left 值。比如：图片宽度 100,left:50,textAlign:'center' 即可居中 |
