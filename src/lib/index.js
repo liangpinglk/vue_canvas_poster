@@ -8,14 +8,14 @@ export {
 	vueCanvasPoster,
 }
 
-const myPlugin = {
+var myPlugin = {
 	install,
 }
 
 export default myPlugin
 
 // Auto-install
-let GlobalVue = null
+var GlobalVue = null
 if (typeof window !== 'undefined') {
 	GlobalVue = window.Vue
 } else if (typeof global !== 'undefined') {
